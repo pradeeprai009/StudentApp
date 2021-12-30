@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1d73d8</color>
+    <color name="colorPrimaryDark">#003480</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBlack">#0E0D0D</color>
+    <color name="colorRed">#E74C3C</color>
+    <color name="colorSkyBlue">#3592d8</color>
+    <color name="colorGreen">#27AE60</color>
+    <color name="colorWhite">#F8F9F9</color>
+    <color name="colorSilver">#ECF0F1</color>
+
+    <color name="screen1">#F44336</color>
+    <color name="screen2">#64DD17</color>
+    <color name="screen3">#9C27B0</color>
+
+    <array name="dot_on_page_active">
+        <item>#B71C1C</item>
+        <item>#8BC34A</item>
+        <item>#4A148C</item>
+
+    </array>
+    <array name="dot_on_page_not_active">
+        <item>#FF5252</item>
+        <item>#CCFF90</item>
+        <item>#E040FB</item>
+    </array>
+
+</resources>

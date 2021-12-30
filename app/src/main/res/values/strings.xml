@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">StudentApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_Homework">Homework</string>
+    <string name="title_Fees">Fees</string>
+    <string name="title_Notice">Notice</string>
+    <string name="title_Exam">Exam</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+</resources>

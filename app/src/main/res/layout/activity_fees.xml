@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fees">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    android:theme="@style/MyActionBar">
+
+                    <ImageView
+                        android:id="@+id/back_button_fees"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="start"
+                        android:padding="5dp"
+                        android:src="@drawable/leftarrow"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/profile_title"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Fees Details"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/bell_main"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/bell"
+                        android:visibility="invisible"
+                        android:tint="@color/colorWhite" />
+                </androidx.appcompat.widget.Toolbar>
+            </LinearLayout><!--Top Toolbar-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/grand_total"
+                    android:layout_width="match_parent"
+                    android:text="Grand Total"
+                    android:textStyle="bold"
+                    android:background="@color/colorSilver"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBlack" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Amount"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBlack" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="Discount"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBlack" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".8"
+                        android:text="Fine"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBlack" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Paid"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBlack" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Balance"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@color/colorBlack" />
+            </LinearLayout><!--GrandTotal Layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_ground_cardview"
+                    app:strokeWidth="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fees Details Monthly"
+                            android:textSize="14sp"
+                            android:padding="5dp"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:gravity="center"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recyclerView_fees_monthly"
+                            >
+                        </androidx.recyclerview.widget.RecyclerView>
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout><!-- RecycleView monthly-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/back_ground_cardview"
+                    app:strokeWidth="1dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fees Details Quarterly"
+                            android:textSize="14sp"
+                            android:padding="5dp"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:gravity="center"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/recyclerView_fees_quarterly"
+                            >
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout><!-- RecycleView quarterly-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
